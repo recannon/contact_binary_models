@@ -18,8 +18,8 @@
                 <th>Model_File</th>
                 <th>Publication</th>
                 <th>DEEVE_2a [km]</th>
-                <th>Published</th>
-                <th>Radar Observations</th>
+                <th>D_eff</th>
+                <th>P</th>
             </tr>
         </thead>
         <tbody>
@@ -28,34 +28,43 @@
                 <td><a href="model_files/2006dp14.obj">Download File</a></td>
                 <td><a href="https://doi.org/10.1093/mnras/staf371">Cannon+25</a></td>
                 <td>0.52</td>
-                <td>Y</td>
-                <td>Y</td>
+                <td>0.26</td>
+                <td>5.7860</td>
             </tr>
             <tr>
                 <td>(275677) 2000 RS11</td>
                 <td><a href="model_files/2000rs11.obj">Download File</a></td>
-                <td><a href="https://doi.org/10.1093/mnras/stag543">Cannon+25</a></td>
+                <td><a href="https://doi.org/10.1093/mnras/stag543">Cannon+26</a></td>
                 <td>4.04</td>
-                <td>Y</td>
-                <td>Y</td>
+                <td>3.50</td>
+                <td>4.445</td>
             </tr>
             <tr>
                 <td>2024 ON</td>
                 <td>Not Available</td>
-                <td>NEA</td>
+                <td>Cannon+In Prep</td>
                 <td>--</td>
-                <td>N</td>
-                <td>Y</td>
+                <td>--</td>
+                <td>--</td>
             </tr>
         </tbody>
     </table>
 
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="https://cdn.datatables.net/2.3.8/js/dataTables.js"></script>
-    <!-- <script>new DataTable('#data-table')</script> -->
-    <script>
+    <script>new DataTable('#data-table')</script>
+    <!-- <!-- <script> -->
     $(document).ready(function () {
       $('#data-table').DataTable(); // sorting/search enabled automatically
+    });
+  </script> -->
+  <!-- <script>
+    let table = new DataTable('#example');
+    
+    table.on('click', 'tbody tr', function () {
+        let data = table.row(this).data();
+    
+        alert('You clicked on ' + data[0] + "'s row");
     });
   </script> -->
 </body>
