@@ -3,15 +3,15 @@
 <head>
   <meta charset="utf-8">
   <title>Contact Binary Models</title>
-  This page is maintained by Richard Cannon (richard.cannon@ed.ac.uk). 
-  Please reach out if any models have been missed, or information is incorrect.
-  Last updated 06/07/2026.
-  All non-shape information is taken from the shape publication papers, unless reference is given otherwise as a hyperlink.
-  Shape information (DEEVE, D_eff, etc.) is recalculated from the model files.
   <link rel="stylesheet" href="https://cdn.datatables.net/2.3.8/css/dataTables.dataTables.css">
 </head>
 <body>
   <h1>Contact Binary Models</h1>
+  This page is maintained by Richard Cannon (<a href="mailto:richard.cannon@ed.ac.uk">richard.cannon@ed.ac.uk</a>). 
+  Please reach out if any models have been missed, or information is incorrect.
+  Last updated 06/07/2026.
+  All non-shape information is taken from the shape publication papers, unless reference is given otherwise as a hyperlink.
+  Shape information (DEEVE, D_eff, etc.) is recalculated from the model files.
   <table id="data-table" class="display">
     <thead>
             <tr>
@@ -99,7 +99,7 @@
             <tr>
                 <td>(4486) Mithra</td>
                 <td>NEO</td>
-                <td>S <a href="https://doi.org/10.1016/j.icarus.2018.12.035">ref</a></td>
+                <td>S <a href="https://doi.org/10.1016/j.icarus.2018.12.035">(ref)</a></td>
                 <td>2.56</td>
                 <td>1.69</td>
                 <td>67.5</td>
@@ -203,20 +203,10 @@
 
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="https://cdn.datatables.net/2.3.8/js/dataTables.js"></script>
-    <script>new DataTable('#data-table')</script>
-    <!-- <script>
-    $(document).ready(function () {
-      $('#data-table').DataTable(); // sorting/search enabled automatically
-    });
-  </script> -->
-  <!-- <script>
-    let table = new DataTable('#example');
-    
-    table.on('click', 'tbody tr', function () {
-        let data = table.row(this).data();
-    
-        alert('You clicked on ' + data[0] + "'s row");
-    });
-  </script> -->
+    <script>
+        new DataTable('#data-table', {
+            pageLength: 25
+        });
+    </script>
 </body>
 </html>
