@@ -260,17 +260,19 @@
 
         // Unpublished function
         $.fn.dataTable.ext.search.push(function (settings, data, dataIndex) {
-        const showUnpublished = document.getElementById('show-unpublished').checked;
-        if (showUnpublished) return true; // checkbox ticked -> show everything
-
-        const row = settings.aoData[dataIndex].nTr;
-        return row.getAttribute('model-published') !== 'false';
+            const showUnpublished = document.getElementById('show-unpublished').checked;
+            if (showUnpublished) return true;
+            const row = settings.aoData[dataIndex].nTr;
+            return row.getAttribute('data-published') !== 'false';
         });
 
-        //Makes table formatted
-        new DataTable('#data-table', {
+        const table = new DataTable('#data-table', {
             pageLength: 25,
             columnDefs: columnDefs
+        });
+
+        document.getElementById('show-unpublished').addEventListener('change', function () {
+            table.draw();
         });
     </script>
 </body>
