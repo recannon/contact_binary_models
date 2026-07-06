@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Asteroid Data</title>
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.8/css/jquery.dataTables.min.css">
+  <style>
+    body { font-family: sans-serif; margin: 2rem; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { padding: 6px 12px; text-align: left; }
+  </style>
+</head>
+<body>
+  <h1>Asteroid Data</h1>
+  <table id="data-table" class="display">
+    <thead>
+      <tr><th>Object</th><th>Diameter (km)</th><th>Period (h)</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Example 1</td><td>12.3</td><td>5.4</td></tr>
+      <tr><td>Example 2</td><td>8.7</td><td>3.1</td></tr>
+    </tbody>
+  </table>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('#data-table').DataTable(); // sorting/search enabled automatically
+    });
+  </script>
+</body>
+</html>
