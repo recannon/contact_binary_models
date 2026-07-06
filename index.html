@@ -263,7 +263,7 @@
             const showUnpublished = document.getElementById('show-unpublished').checked;
             if (showUnpublished) return true;
             const row = settings.aoData[dataIndex].nTr;
-            return row.getAttribute('data-published') !== 'false';
+            return row.getAttribute('model-published') !== 'false';
         });
 
         const table = new DataTable('#data-table', {
