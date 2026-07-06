@@ -5,8 +5,7 @@
   <title>Contact Binary Models</title>
   This page is maintained by Richard Cannon (richard.cannon@ed.ac.uk). 
   Please reach out if any models have been missed, or information is incorrect.
-  Last updated 06/07/2026
-  t1
+  Last updated 06/07/2026.
   All information is taken from the shape publication papers, unless reference is given otherwise as a hyperlink.
   <link rel="stylesheet" href="https://cdn.datatables.net/2.3.8/css/dataTables.dataTables.css">
 </head>
@@ -19,8 +18,8 @@
                 <th>Dynamic Class</th>
                 <th>Spectral Type</th>
                 <th>DEEVE_2a [km]</th>
-                <th>D_eff</th>
-                <th>P</th>
+                <th>D_eff [km]</th>
+                <th>P [h]</th>
                 <th>Model_File</th>
                 <th>Publication</th>
             </tr>
@@ -86,13 +85,23 @@
                 <td><a href="https://sbn.psi.edu/pds/shape-models/">Available Here</a></td>
                 <td><a href="https://www.science.org/doi/10.1126/science.263.5149.940">Hudson & Ostro (1994)</a></td>
             </tr>
+            <tr>
+                <td>(2063) Bacchus</td>
+                <th>NEO</th>
+                <th>Q / C</th>
+                <td>1.12</td>
+                <td>0.67</td>
+                <td>15</td>
+                <td><a href="https://sbn.psi.edu/pds/shape-models/">Available Here (1 lobe)</a></td>
+                <td><a href="https://doi.org/10.1006/icar.1999.6094">Benner et al. (1999)</a></td>
+            </tr>
         </tbody>
     </table>
 
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="https://cdn.datatables.net/2.3.8/js/dataTables.js"></script>
     <script>new DataTable('#data-table')</script>
-    <!-- <!-- <script> -->
+    <!-- <script>
     $(document).ready(function () {
       $('#data-table').DataTable(); // sorting/search enabled automatically
     });
